@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import pricingChart from "@/assets/pricing-chart-3d.jpg";
+import pricingChart from "@/assets/financial-success-chart.jpeg";
 
 const Pricing = () => {
   return (
@@ -20,10 +20,10 @@ const Pricing = () => {
         </div>
 
         {/* 3D Pricing Chart Visual */}
-        <div className="max-w-3xl mx-auto mb-16">
+        <div className="max-w-4xl mx-auto mb-16">
           <img 
             src={pricingChart} 
-            alt="Comparison: tall fixed consulting fee column versus shorter dynamic performance-linked success fee with vibrant green ROI highlighting" 
+            alt="Financial success visualization showing +15% ROI uplift with data-driven metrics breaking through traditional project limits" 
             className="w-full h-auto rounded-lg shadow-[var(--shadow-card)]"
           />
         </div>
