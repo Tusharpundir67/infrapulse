@@ -1,27 +1,25 @@
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/hero-roi-chart.jpeg";
+import heroImage from "@/assets/hero-dashboard-3d.jpg";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
       {/* Background Image with Overlay */}
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 z-0">
         <img 
           src={heroImage} 
-          alt="Financial ROI Analytics" 
-          className="w-full h-full object-cover"
+          alt="AI dashboard pushing aside legacy paper blueprints showing 15% ROI uplift" 
+          className="w-full h-full object-cover opacity-90"
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-background/95 via-background/90 to-background/80" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/90 via-background/70 to-background" />
         
-        {/* Animated Data Grid Overlay */}
-        <div className="absolute inset-0 opacity-20">
-          <div className="absolute inset-0 bg-[linear-gradient(to_right,hsl(var(--accent)/0.1)_1px,transparent_1px),linear-gradient(to_bottom,hsl(var(--accent)/0.1)_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_50%,#000_70%,transparent_110%)]" />
-        </div>
-        
-        {/* Animated Particles */}
-        <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute w-96 h-96 -top-48 -left-48 bg-accent/20 rounded-full blur-3xl animate-pulse" />
-          <div className="absolute w-96 h-96 -bottom-48 -right-48 bg-primary/30 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
+        {/* Animated Data Particles */}
+        <div className="absolute inset-0 opacity-30">
+          <div className="absolute inset-0" style={{
+            backgroundImage: 'radial-gradient(circle, hsl(var(--accent)) 1px, transparent 1px)',
+            backgroundSize: '50px 50px',
+            animation: 'pulse 3s ease-in-out infinite'
+          }} />
         </div>
       </div>
 

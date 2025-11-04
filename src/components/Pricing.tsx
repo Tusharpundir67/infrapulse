@@ -1,5 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import pricingChart from "@/assets/pricing-chart-3d.jpg";
 
 const Pricing = () => {
   return (
@@ -14,8 +15,17 @@ const Pricing = () => {
             Pay for Results, <span className="text-accent">Not Reports</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            InfraPulse charges based on achieved ROI or efficiency gains. No upfront consulting fees. Just shared success.
+            InfraPulse charges based on achieved ROI or efficiency gains. No upfront consulting fees. No bloated invoices. Just shared success.
           </p>
+        </div>
+
+        {/* 3D Pricing Chart Visual */}
+        <div className="max-w-3xl mx-auto mb-16">
+          <img 
+            src={pricingChart} 
+            alt="Comparison: tall fixed consulting fee column versus shorter dynamic performance-linked success fee with vibrant green ROI highlighting" 
+            className="w-full h-auto rounded-lg shadow-[var(--shadow-card)]"
+          />
         </div>
 
         {/* Comparison Chart */}
