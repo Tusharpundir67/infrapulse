@@ -1,10 +1,10 @@
 const Footer = () => {
   return (
-    <footer className="py-12 px-6 bg-card border-t border-border">
+    <footer className="py-9 px-6 bg-card border-t border-border">
       <div className="container mx-auto max-w-6xl">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           {/* Brand */}
-          <div className="space-y-4">
+          <div className="space-y-2">
             <h3 className="text-2xl font-bold bg-gradient-to-r from-accent to-accent/80 bg-clip-text text-transparent">
               InfraPulse
             </h3>

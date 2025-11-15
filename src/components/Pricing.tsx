@@ -119,12 +119,7 @@ const Pricing = () => {
           <p className="text-lg text-muted-foreground">
             Ready to align consulting costs with actual value delivered?
           </p>
-          <Button 
-            size="lg"
-            className="text-lg px-12 py-6 bg-gradient-to-r from-accent to-accent/90 hover:from-accent/90 hover:to-accent text-accent-foreground font-semibold shadow-[0_0_30px_rgba(255,215,0,0.3)] hover:shadow-[0_0_40px_rgba(255,215,0,0.5)] transition-all duration-300 hover:scale-105"
-          >
-            Start Your Pilot Project
-          </Button>
+          
         </div>
       </div>
     </section>
