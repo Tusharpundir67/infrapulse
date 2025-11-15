@@ -2,32 +2,19 @@ import { Card } from "@/components/ui/card";
 
 const Testimonials = () => {
   const testimonials = [
-    {
-      quote: "InfraPulse gave us ROI clarity in 15 minutes—CBRE took 3 weeks.",
-      author: "Rajesh Kumar",
-      role: "VP Infrastructure",
-      company: "InfraTech Solutions"
-    },
-    {
-      quote: "We saved 12% on our data center rollout thanks to InfraPulse's predictive modeling.",
-      author: "Sarah Chen",
-      role: "Project Director",
-      company: "MetroBuild"
-    },
-    {
-      quote: "Finally, a consulting platform that speaks our language: outcomes.",
-      author: "Michael Patel",
-      role: "CFO",
-      company: "GreenGrid Infrastructure"
-    }
+    { video: "/InfraPulse_Data_Center_Cost_Savings.mp4" },
+    { video: "/InfraPulse_Fast_ROI_Insights.mp4" },
+    { video: "/InfraPulse_Outcome_Driven_Financial_Consulting.mp4" },
   ];
 
   return (
-    <section className="py-24 px-6 bg-gradient-to-b from-card to-background relative overflow-hidden">
+    <section className="py-21 px-6 bg-gradient-to-b from-card to-background relative overflow-hidden">
+      
       {/* Background Elements */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(255,215,0,0.05),transparent_50%)]" />
       
       <div className="container mx-auto max-w-6xl relative z-10">
+
         {/* Header */}
         <div className="text-center space-y-4 mb-16 animate-fade-in">
           <div className="inline-block px-4 py-2 rounded-full bg-accent/10 border border-accent/20">
@@ -38,24 +25,20 @@ const Testimonials = () => {
           </h2>
         </div>
 
-        {/* Testimonials Grid */}
+        {/* VIDEO Testimonials Grid */}
         <div className="grid md:grid-cols-3 gap-8 mb-16">
-          {testimonials.map((testimonial, index) => (
-            <Card 
+          {testimonials.map((item, index) => (
+            <Card
               key={index}
-              className="p-6 bg-card/50 backdrop-blur-sm border-border hover:border-accent/50 transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(255,215,0,0.15)]"
+              className="p-4 bg-card/50 backdrop-blur-sm border-border hover:border-accent/50 
+                         transition-all duration-300 hover:scale-105 
+                         hover:shadow-[0_0_30px_rgba(255,215,0,0.15)]"
             >
-              <div className="space-y-4">
-                <div className="text-4xl text-accent/30">"</div>
-                <p className="text-foreground leading-relaxed">
-                  {testimonial.quote}
-                </p>
-                <div className="pt-4 border-t border-border">
-                  <div className="font-semibold text-foreground">{testimonial.author}</div>
-                  <div className="text-sm text-muted-foreground">{testimonial.role}</div>
-                  <div className="text-sm text-accent font-medium">{testimonial.company}</div>
-                </div>
-              </div>
+              <video
+                src={item.video}
+                controls
+                className="w-full h-auto rounded-lg"
+              />
             </Card>
           ))}
         </div>
@@ -67,7 +50,7 @@ const Testimonials = () => {
           </div>
           <div className="flex flex-wrap justify-center items-center gap-12 opacity-60">
             {["InfraTech", "MetroBuild", "GreenGrid", "UrbanCore", "SmartInfra"].map((company) => (
-              <div 
+              <div
                 key={company}
                 className="text-xl font-bold text-foreground/40 hover:text-accent transition-colors"
               >
@@ -91,6 +74,7 @@ const Testimonials = () => {
             </div>
           </div>
         </Card>
+
       </div>
     </section>
   );

@@ -6,20 +6,19 @@ const AIWorkflow = () => {
     {
       number: "01",
       title: "Upload Specs",
-      description: "Drop your unstructured project documents, PDFs, or data files",
-      icon: "📄"
+      description: "Drop your unstructured project documents, PDFs, or data files"
     },
     {
       number: "02",
       title: "AI Processing",
-      description: "Dual LLM system extracts, analyzes, and simulates scenarios",
-      icon: "🧠"
+      description: "Dual LLM system extracts, analyzes, and simulates scenarios"
+
     },
     {
       number: "03",
       title: "Instant Results",
-      description: "Get ROI forecasts, cost scenarios, and risk analysis in minutes",
-      icon: "⚡"
+      description: "Get ROI forecasts, cost scenarios, and risk analysis in minutes"
+      
     }
   ];
 

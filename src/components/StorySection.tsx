@@ -2,8 +2,8 @@ import { Card } from "@/components/ui/card";
 
 const StorySection = () => {
   return (
-    <section className="py-24 px-6 bg-gradient-to-b from-background to-card">
-      <div className="container mx-auto max-w-6xl">
+    <section className="py-19 px-6 bg-gradient-to-b from-background to-card">
+      <div className="container mx-auto max-w-5xl">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Left: Text Content */}
           <div className="space-y-6 animate-fade-in">
@@ -41,9 +41,7 @@ const StorySection = () => {
             </div>
 
             <div className="pt-6 border-t border-border">
-              <p className="text-foreground font-medium">
-                Just instant, data-driven insights that actually move your project forward.
-              </p>
+             
             </div>
           </div>
 

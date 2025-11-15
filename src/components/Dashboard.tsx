@@ -3,10 +3,10 @@ import dashboardImage from "@/assets/dashboard-analytics.jpeg";
 
 const Dashboard = () => {
   return (
-    <section className="py-24 px-6 bg-gradient-to-b from-card to-background relative overflow-hidden">
+    <section className="py-20 px-6 bg-gradient-to-b from-card to-background relative overflow-hidden">
       {/* Decorative Elements */}
-      <div className="absolute top-20 right-20 w-72 h-72 bg-accent/10 rounded-full blur-3xl" />
-      <div className="absolute bottom-20 left-20 w-72 h-72 bg-primary/20 rounded-full blur-3xl" />
+      <div className="absolute top-3 right-20 w-72 h-72 bg-accent/10 rounded-full blur-2xl" />
+      <div className="absolute bottom-10 left-20 w-72 h-72 bg-primary/20 rounded-full blur-3xl" />
       
       <div className="container mx-auto max-w-6xl relative z-10">
         <div className="grid md:grid-cols-2 gap-12 items-center">

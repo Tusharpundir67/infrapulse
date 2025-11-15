@@ -1,7 +1,11 @@
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-dashboard-3d.jpg";
+import RoiFormModal from "@/components/RoiFormModal";
+import { useState } from "react";
+
 
 const Hero = () => {
+  const [openForm, setOpenForm] = useState(false);
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
       {/* Background Image with Overlay */}
@@ -51,11 +55,13 @@ const Hero = () => {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
             <Button 
-              size="lg" 
-              className="text-lg px-8 py-6 bg-gradient-to-r from-accent to-accent/90 hover:from-accent/90 hover:to-accent text-accent-foreground font-semibold shadow-[0_0_30px_rgba(255,215,0,0.3)] hover:shadow-[0_0_40px_rgba(255,215,0,0.5)] transition-all duration-300 hover:scale-105"
-            >
-              Try the ROI Forecaster
-            </Button>
+  size="lg"
+  onClick={() => setOpenForm(true)}
+  className="text-lg px-8 py-6 bg-gradient-to-r from-accent to-accent/90 hover:from-accent/90 hover:to-accent text-accent-foreground font-semibold shadow-[0_0_30px_rgba(255,215,0,0.3)] hover:shadow-[0_0_40px_rgba(255,215,0,0.5)] transition-all duration-300 hover:scale-105"
+>
+  Try the ROI Forecaster
+</Button>
+
             <Button 
               size="lg" 
               variant="outline"
@@ -89,6 +95,8 @@ const Hero = () => {
           </div>
         </div>
       </div>
+      <RoiFormModal open={openForm} onClose={() => setOpenForm(false)} />
+
     </section>
   );
 };
